@@ -15,8 +15,9 @@ This is a simple web-based music player that allows users to play, pause, and na
 - JavaScript-based progress tracking
 
 ## Installation
+1. Create a folder.Open it with terminal
 
-1. Clone the repository:
+2. Copy the following code and paste it inside the terminal (cloning repository):
    ```sh
    git clone https://github.com/RTongit/MusicPlayer.git
    ```
