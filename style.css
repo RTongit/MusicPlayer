@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.music-player{
+    background-color: #ffe0e5;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+nav .circle{
+    background-color: white;
+    color: crimson;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* display: flex;
+    justify-content: center; */
+    line-height: 40px;
+    align-items: center;
+    box-shadow: 0px 5px 10px #fb899cd9;
+}
+nav .circle:hover{
+    background-color: crimson;
+    color: white;
+}
+.pic img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid white;
+    box-shadow: 0px 5px 40px #fb899cd9;
+
+}
+#song{
+    margin-top: 20px;
+}
+#progress{
+    -webkit-appearance: none;
+    height: 6px;
+    width: 280px;
+    background-color: rgb(245, 34, 76);
+    margin: 40px 0px;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: rgb(245, 34, 76);
+    width: 24px;
+    height: 24px;
+    border: 6px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px #fb899cd9;
+}
+
+/* The -webkit-appearance CSS property is used to control the default styling of HTML elements, overriding the browser’s default styles (such as buttons, input fields, or scrollbars). It is specific to WebKit-based browsers like Chrome and Safari, allowing elements to adopt or ignore native OS styling. */
+
+/* Syntax: element{ -webkit-appearance:value;}   */
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+
+    
+}
+.controls div{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 60px;
+    color: rgb(245, 34, 76);
+    box-shadow: 0px 10px 40px #fb899cd9;
+    cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.4);
+    background-color: rgb(245, 34, 76);
+    color: white;
+}
+audio{
+    display: none;
+}
+
